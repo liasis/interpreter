@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302A35D918B6CF5B005F7AC5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302A35D818B6CF5B005F7AC5 /* Cocoa.framework */; };
+		302A35E318B6CF5B005F7AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 302A35E118B6CF5B005F7AC5 /* InfoPlist.strings */; };
+		302A35F318B6CF82005F7AC5 /* PLInterpreterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302A35EC18B6CF82005F7AC5 /* PLInterpreterController.m */; };
+		302A35F418B6CF82005F7AC5 /* PLInterpreterHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 302A35EE18B6CF82005F7AC5 /* PLInterpreterHistory.m */; };
+		302A35F518B6CF82005F7AC5 /* PLInterpreterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302A35F118B6CF82005F7AC5 /* PLInterpreterViewController.m */; };
+		302A35F618B6CF82005F7AC5 /* PLInterpreterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302A35F218B6CF82005F7AC5 /* PLInterpreterViewController.xib */; };
+		302A362518B6D271005F7AC5 /* LiasisKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302A362418B6D271005F7AC5 /* LiasisKit.framework */; };
+		306BF48218B6E139000F5907 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 306BF48118B6E139000F5907 /* Python.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		302A35D518B6CF5B005F7AC5 /* Interpreter.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Interpreter.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		302A35D818B6CF5B005F7AC5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		302A35DB18B6CF5B005F7AC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		302A35DC18B6CF5B005F7AC5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		302A35DD18B6CF5B005F7AC5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		302A35E018B6CF5B005F7AC5 /* Interpreter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Interpreter-Info.plist"; sourceTree = "<group>"; };
+		302A35E218B6CF5B005F7AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		302A35E418B6CF5B005F7AC5 /* Interpreter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Interpreter-Prefix.pch"; sourceTree = "<group>"; };
+		302A35EB18B6CF82005F7AC5 /* PLInterpreterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInterpreterController.h; sourceTree = "<group>"; };
+		302A35EC18B6CF82005F7AC5 /* PLInterpreterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInterpreterController.m; sourceTree = "<group>"; };
+		302A35ED18B6CF82005F7AC5 /* PLInterpreterHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInterpreterHistory.h; sourceTree = "<group>"; };
+		302A35EE18B6CF82005F7AC5 /* PLInterpreterHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInterpreterHistory.m; sourceTree = "<group>"; };
+		302A35F018B6CF82005F7AC5 /* PLInterpreterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInterpreterViewController.h; sourceTree = "<group>"; };
+		302A35F118B6CF82005F7AC5 /* PLInterpreterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInterpreterViewController.m; sourceTree = "<group>"; };
+		302A35F218B6CF82005F7AC5 /* PLInterpreterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PLInterpreterViewController.xib; sourceTree = "<group>"; };
+		302A362418B6D271005F7AC5 /* LiasisKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LiasisKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		306BF48118B6E139000F5907 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		302A35D218B6CF5B005F7AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306BF48218B6E139000F5907 /* Python.framework in Frameworks */,
+				302A362518B6D271005F7AC5 /* LiasisKit.framework in Frameworks */,
+				302A35D918B6CF5B005F7AC5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302A35CC18B6CF5B005F7AC5 = {
+			isa = PBXGroup;
+			children = (
+				302A35DE18B6CF5B005F7AC5 /* Interpreter */,
+				302A35D718B6CF5B005F7AC5 /* Frameworks */,
+				302A35D618B6CF5B005F7AC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		302A35D618B6CF5B005F7AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302A35D518B6CF5B005F7AC5 /* Interpreter.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		302A35D718B6CF5B005F7AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				306BF48118B6E139000F5907 /* Python.framework */,
+				302A362418B6D271005F7AC5 /* LiasisKit.framework */,
+				302A35D818B6CF5B005F7AC5 /* Cocoa.framework */,
+				302A35DA18B6CF5B005F7AC5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		302A35DA18B6CF5B005F7AC5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302A35DB18B6CF5B005F7AC5 /* Foundation.framework */,
+				302A35DC18B6CF5B005F7AC5 /* CoreData.framework */,
+				302A35DD18B6CF5B005F7AC5 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		302A35DE18B6CF5B005F7AC5 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				302A35EA18B6CF82005F7AC5 /* Interpreter */,
+				302A35EF18B6CF82005F7AC5 /* Interpreter View */,
+				302A35DF18B6CF5B005F7AC5 /* Supporting Files */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		302A35DF18B6CF5B005F7AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				302A35E018B6CF5B005F7AC5 /* Interpreter-Info.plist */,
+				302A35E118B6CF5B005F7AC5 /* InfoPlist.strings */,
+				302A35E418B6CF5B005F7AC5 /* Interpreter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		302A35EA18B6CF82005F7AC5 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				302A35EB18B6CF82005F7AC5 /* PLInterpreterController.h */,
+				302A35EC18B6CF82005F7AC5 /* PLInterpreterController.m */,
+				302A35ED18B6CF82005F7AC5 /* PLInterpreterHistory.h */,
+				302A35EE18B6CF82005F7AC5 /* PLInterpreterHistory.m */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		302A35EF18B6CF82005F7AC5 /* Interpreter View */ = {
+			isa = PBXGroup;
+			children = (
+				302A35F018B6CF82005F7AC5 /* PLInterpreterViewController.h */,
+				302A35F118B6CF82005F7AC5 /* PLInterpreterViewController.m */,
+				302A35F218B6CF82005F7AC5 /* PLInterpreterViewController.xib */,
+			);
+			path = "Interpreter View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		302A35D418B6CF5B005F7AC5 /* Interpreter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302A35E718B6CF5B005F7AC5 /* Build configuration list for PBXNativeTarget "Interpreter" */;
+			buildPhases = (
+				302A35D118B6CF5B005F7AC5 /* Sources */,
+				302A35D218B6CF5B005F7AC5 /* Frameworks */,
+				302A35D318B6CF5B005F7AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Interpreter;
+			productName = Interpreter;
+			productReference = 302A35D518B6CF5B005F7AC5 /* Interpreter.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		302A35CD18B6CF5B005F7AC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Liasis;
+			};
+			buildConfigurationList = 302A35D018B6CF5B005F7AC5 /* Build configuration list for PBXProject "Interpreter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 302A35CC18B6CF5B005F7AC5;
+			productRefGroup = 302A35D618B6CF5B005F7AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				302A35D418B6CF5B005F7AC5 /* Interpreter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		302A35D318B6CF5B005F7AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302A35E318B6CF5B005F7AC5 /* InfoPlist.strings in Resources */,
+				302A35F618B6CF82005F7AC5 /* PLInterpreterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		302A35D118B6CF5B005F7AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302A35F318B6CF82005F7AC5 /* PLInterpreterController.m in Sources */,
+				302A35F418B6CF82005F7AC5 /* PLInterpreterHistory.m in Sources */,
+				302A35F518B6CF82005F7AC5 /* PLInterpreterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		302A35E118B6CF5B005F7AC5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302A35E218B6CF5B005F7AC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		302A35E518B6CF5B005F7AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		302A35E618B6CF5B005F7AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		302A35E818B6CF5B005F7AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Liasis-gmvlilcbfxgysudsmqayhtqlgreh/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Interpreter/Interpreter-Prefix.pch";
+				INFOPLIST_FILE = "Interpreter/Interpreter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		302A35E918B6CF5B005F7AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Liasis-gmvlilcbfxgysudsmqayhtqlgreh/Build/Products/Debug",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Interpreter/Interpreter-Prefix.pch";
+				INFOPLIST_FILE = "Interpreter/Interpreter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		302A35D018B6CF5B005F7AC5 /* Build configuration list for PBXProject "Interpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302A35E518B6CF5B005F7AC5 /* Debug */,
+				302A35E618B6CF5B005F7AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302A35E718B6CF5B005F7AC5 /* Build configuration list for PBXNativeTarget "Interpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302A35E818B6CF5B005F7AC5 /* Debug */,
+				302A35E918B6CF5B005F7AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 302A35CD18B6CF5B005F7AC5 /* Project object */;
+}
